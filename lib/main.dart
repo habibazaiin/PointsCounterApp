@@ -90,95 +90,95 @@ class _PointsCounterState extends State<PointsCounter> {
                     ),
                   ],
                 ),
-                // SizedBox(
-                //   height: 450,
-                //   child: VerticalDivider(color: Colors.grey, thickness: 1),
-                // ),
-                // Column(
-                //   children: [
-                //     Text('Team B', style: TextStyle(fontSize: 32)),
-                //     Text('$TeamBPoints', style: TextStyle(fontSize: 150)),
-                //     ElevatedButton(
-                //       style: ElevatedButton.styleFrom(
-                //         backgroundColor: Colors.deepOrange,
-                //         shape: RoundedRectangleBorder(
-                //           borderRadius: BorderRadius.circular(5),
-                //         ),
-                //         minimumSize: Size(160, 60),
-                //       ),
-                //       onPressed: () {
-                //         setState(() {
-                //           TeamBPoints++;
-                //         });
-                //       },
-                //       child: Text(
-                //         'Add 1 Point',
-                //         style: TextStyle(color: Colors.black, fontSize: 18),
-                //       ),
-                //     ),
-                //     SizedBox(height: 16),
-                //     ElevatedButton(
-                //       style: ElevatedButton.styleFrom(
-                //         backgroundColor: Colors.deepOrange,
-                //         shape: RoundedRectangleBorder(
-                //           borderRadius: BorderRadius.circular(5),
-                //         ),
-                //         minimumSize: Size(160, 60),
-                //       ),
-                //       onPressed: () {
-                //         setState(() {
-                //           TeamBPoints += 2;
-                //         });
-                //       },
-                //       child: Text(
-                //         'Add 2 points',
-                //         style: TextStyle(color: Colors.black, fontSize: 18),
-                //       ),
-                //     ),
-                //     SizedBox(height: 16),
-                //     ElevatedButton(
-                //       style: ElevatedButton.styleFrom(
-                //         backgroundColor: Colors.deepOrange,
-                //         shape: RoundedRectangleBorder(
-                //           borderRadius: BorderRadius.circular(5),
-                //         ),
-                //         minimumSize: Size(160, 60),
-                //       ),
-                //       onPressed: () {
-                //         setState(() {
-                //           TeamBPoints += 3;
-                //         });
-                //       },
-                //       child: Text(
-                //         'Add 3 points',
-                //         style: TextStyle(color: Colors.black, fontSize: 18),
-                //       ),
-                //     ),
-                //   ],
-                // ),
+                SizedBox(
+                  height: 450,
+                  child: VerticalDivider(color: Colors.grey, thickness: 1),
+                ),
+                Column(
+                  children: [
+                    Text('Team B', style: TextStyle(fontSize: 32)),
+                    Text('$TeamBPoints', style: TextStyle(fontSize: 150)),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepOrange,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        minimumSize: Size(160, 60),
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          TeamBPoints++;
+                        });
+                      },
+                      child: Text(
+                        'Add 1 Point',
+                        style: TextStyle(color: Colors.black, fontSize: 18),
+                      ),
+                    ),
+                    SizedBox(height: 16),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepOrange,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        minimumSize: Size(160, 60),
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          TeamBPoints += 2;
+                        });
+                      },
+                      child: Text(
+                        'Add 2 points',
+                        style: TextStyle(color: Colors.black, fontSize: 18),
+                      ),
+                    ),
+                    SizedBox(height: 16),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepOrange,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        minimumSize: Size(160, 60),
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          TeamBPoints += 3;
+                        });
+                      },
+                      child: Text(
+                        'Add 3 points',
+                        style: TextStyle(color: Colors.black, fontSize: 18),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
-            // Spacer(),
-            // ElevatedButton(
-            //   style: ElevatedButton.styleFrom(
-            //     backgroundColor: Colors.deepOrange,
-            //     shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.circular(5),
-            //     ),
-            //     minimumSize: Size(160, 60),
-            //   ),
-            //   onPressed: () {
-            //     setState(() {
-            //       TeamApoints = 0;
-            //       TeamBPoints = 0;
-            //     });
-            //   },
-            //   child: Text(
-            //     'Reset',
-            //     style: TextStyle(fontSize: 18, color: Colors.black),
-            //   ),
-            // ),
-            // Spacer(),
+            Spacer(),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepOrange,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                minimumSize: Size(160, 60),
+              ),
+              onPressed: () {
+                setState(() {
+                  TeamApoints = 0;
+                  TeamBPoints = 0;
+                });
+              },
+              child: Text(
+                'Reset',
+                style: TextStyle(fontSize: 18, color: Colors.black),
+              ),
+            ),
+            Spacer(),
           ],
         ),
       ),
